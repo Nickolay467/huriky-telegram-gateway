@@ -1,12 +1,29 @@
 
-import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function Pricing() {
   const plans = [
-    { duration: "30 дней", price: "150 ₽", popular: false },
-    { duration: "90 дней", price: "400 ₽", popular: true },
-    { duration: "180 дней", price: "700 ₽", popular: false },
+    {
+      duration: "30 дней",
+      price: "150 ₽",
+      speed: "до 100 Мб/с",
+      traffic: "50 ГБ",
+      popular: false,
+    },
+    {
+      duration: "90 дней",
+      price: "400 ₽",
+      speed: "до 150 Мб/с",
+      traffic: "100 ГБ",
+      popular: true,
+    },
+    {
+      duration: "180 дней",
+      price: "700 ₽",
+      speed: "до 150 Мб/с",
+      traffic: "150 ГБ",
+      popular: false,
+    },
   ];
 
   return (
@@ -34,15 +51,14 @@ export default function Pricing() {
                 <CardTitle className="text-center text-white">{plan.duration}</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="text-center">
-                  <p className="text-3xl font-bold text-telegram-yellow mb-6">
+                <div className="text-center space-y-4">
+                  <p className="text-3xl font-bold text-telegram-yellow">
                     {plan.price}
                   </p>
-                  <Button className="w-full bg-telegram-blue hover:bg-telegram-blue/90" asChild>
-                    <a href="https://t.me/hurikynetwork_bot" target="_blank" rel="noopener noreferrer">
-                      Подключить
-                    </a>
-                  </Button>
+                  <div className="space-y-2 text-gray-400">
+                    <p>Скорость: {plan.speed}</p>
+                    <p>Трафик: {plan.traffic}</p>
+                  </div>
                 </div>
               </CardContent>
             </Card>
