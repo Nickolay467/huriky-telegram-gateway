@@ -14,7 +14,7 @@ export default function Header() {
             rel="noopener noreferrer"
             className="inline-flex items-center rounded-md bg-telegram-blue px-3 py-2 text-sm font-medium text-white hover:bg-telegram-blue/90 transition-colors"
           >
-            Open Telegram Bot
+            Открыть Telegram бота
           </a>
         </div>
       </div>
