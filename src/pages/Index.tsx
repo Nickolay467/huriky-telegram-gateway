@@ -5,6 +5,7 @@ import CallToAction from "@/components/CallToAction";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import FAQ from "@/components/FAQ";
+import Pricing from "@/components/Pricing";
 import { Helmet } from "react-helmet";
 
 const Index = () => {
@@ -36,12 +37,13 @@ const Index = () => {
       <main className="flex-1">
         <Hero />
         <Features />
+        <Pricing />
         <FAQ />
         <CallToAction />
       </main>
       <Footer />
     </div>
   );
-};
+}
 
 export default Index;

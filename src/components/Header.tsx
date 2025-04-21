@@ -9,12 +9,12 @@ export default function Header() {
         </div>
         <div className="ml-auto">
           <a
-            href="https://t.me/hurikynetwork_bot"
+            href="https://t.me/hurikynetwork_support"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center rounded-md bg-telegram-blue px-3 py-2 text-sm font-medium text-white hover:bg-telegram-blue/90 transition-colors"
           >
-            Открыть Telegram бота
+            Техническая поддержка
           </a>
         </div>
       </div>

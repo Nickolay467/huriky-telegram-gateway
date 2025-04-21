@@ -22,13 +22,13 @@ export default function Hero() {
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Button className="bg-telegram-blue hover:bg-telegram-blue/90 text-white rounded-xl px-8 py-6 text-lg font-medium" asChild>
                 <a href="https://t.me/hurikynetwork_bot" target="_blank" rel="noopener noreferrer">
-                  Начать использовать бота <ExternalLink className="ml-2 h-5 w-5" />
+                  Подключить VPN сейчас <ExternalLink className="ml-2 h-5 w-5" />
                 </a>
               </Button>
             </div>
           </div>
           <div className="flex justify-center mt-8 lg:mt-0">
-            <div className="relative w-[280px] md:w-[320px] lg:w-[380px] h-[600px] overflow-hidden rounded-2xl bg-telegram-darker shadow-xl border border-telegram-card">
+            <div className="relative w-[280px] md:w-[320px] lg:w-[380px] h-[640px] overflow-hidden rounded-2xl bg-telegram-darker shadow-xl border border-telegram-card">
               <img 
                 src="/lovable-uploads/dfc813fb-1801-4c81-96f6-31e392411529.png" 
                 alt="Интерфейс Telegram бота HurikyNetwork" 
