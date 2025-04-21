@@ -1,5 +1,14 @@
 
+import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "@/components/ui/navigation-menu";
+
 export default function Header() {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <header className="sticky top-0 z-50 w-full backdrop-blur-lg bg-telegram-darker/80 border-b border-telegram-card">
       <div className="container flex h-16 items-center px-4 sm:px-6">
@@ -7,6 +16,34 @@ export default function Header() {
           <span className="text-telegram-yellow text-xl font-bold">⚡ Huriky</span>
           <span className="text-white text-xl font-bold">Network</span>
         </div>
+        <NavigationMenu className="mx-6">
+          <NavigationMenuList>
+            <NavigationMenuItem>
+              <NavigationMenuLink
+                className="text-white hover:text-telegram-yellow transition-colors cursor-pointer px-3"
+                onClick={() => scrollToSection('features')}
+              >
+                Возможности
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuLink
+                className="text-white hover:text-telegram-yellow transition-colors cursor-pointer px-3"
+                onClick={() => scrollToSection('pricing')}
+              >
+                Тарифы
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuLink
+                className="text-white hover:text-telegram-yellow transition-colors cursor-pointer px-3"
+                onClick={() => scrollToSection('faq')}
+              >
+                FAQ
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+          </NavigationMenuList>
+        </NavigationMenu>
         <div className="ml-auto">
           <a
             href="https://t.me/hurikynetwork_support"
