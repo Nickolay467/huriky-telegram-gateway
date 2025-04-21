@@ -56,4 +56,5 @@ export default function Header() {
         </div>
       </div>
     </header>
-  );
+  ); // Added closing semicolon
+}  // Added closing curly brace for the component function
